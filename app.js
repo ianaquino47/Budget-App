@@ -1,7 +1,37 @@
 // BUDGET CONTROLLER
 const budgetController = (function() {
 
+    const Expense = function(id, description, value) {
+        this.id = id;
+        this.description = description;
+        this.value = value;   
+    };
+
+    const Income = function(id, description, value) {
+        this.id = id;
+        this.description = description;
+        this.value = value;   
+    };
+
+    const allExpenses = [];
+    const allIncomes = [];
+
+    const totalExpenses = 0;
+
+    const data = {
+        allItems: {
+            exp: [],
+            inc: []
+        },
+        totals: {
+            exp: 0,
+            inc: 0
+        }
+    }
+
+
 })();
+
 
 //UI CONTROLLER
 const UIController = (function() {
